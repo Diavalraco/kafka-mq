@@ -1,14 +1,14 @@
 # kafka-mq
-version: "3"
+    version: "3"
 
-services:
+    services:
     zookeeper:
         image: zookeeper
         container_name: zookeeper
         ports:
             - "2181:2181"
 
- kafka:
+    kafka:
         image: confluentinc/cp-kafka
         depends_on:
             - zookeeper
