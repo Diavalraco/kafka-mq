@@ -8,7 +8,7 @@ services:
         ports:
             - "2181:2181"
 
-    kafka:
+ kafka:
         image: confluentinc/cp-kafka
         depends_on:
             - zookeeper
